@@ -1,0 +1,18 @@
+https://github.com/wechaty/wechaty
+
+Notice: Wechaty requires Node.js version >= 16
+
+npm init
+npm install wechaty
+
+//查看镜像
+npm config list
+
+//切换淘宝镜像
+npm config set registry https://registry.npmmirror.com
+
+//切换npm官方源
+npm config set registry https://registry.npmjs.org
+
+https://github.com/expressjs/express
+https://ejs.co/

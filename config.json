@@ -1,0 +1,11 @@
+{
+    "default":{
+        "tips":"默认回复，空字符串则不回复",
+        "type":"text",
+        "content":""
+    },
+    "rules":{
+        "你好123":{"type":"text","content":"你好啊"},
+        "美图123":{"type":"image","content":"https://wechaty.github.io/wechaty/images/bot-qr-code.png"}
+    }
+}
