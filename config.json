@@ -9,10 +9,10 @@
         "content":""
     },
     "rules":{
-        "^测试$":{"type":"text","content":"完全匹配测试成功"},
+        "^测试$":{"type":"text","content":"完全匹配"},
         "^开头":{"type":"text","content":"匹配开头"},
         "结尾$":{"type":"text","content":"匹配结尾"},
         "测试123":{"type":"text","content":"只要包含字符串"},
-        "发送图片":{"type":"image","content":"https://i1.hdslb.com/bfs/archive/de002977c5c8852933816acff8386d747205b5d8.jpg"}
+        "^发送图片$":{"type":"image","content":"https://i1.hdslb.com/bfs/archive/de002977c5c8852933816acff8386d747205b5d8.jpg"}
     }
 }
