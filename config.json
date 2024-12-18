@@ -1,11 +1,18 @@
 {
+    "说明":[
+        "default:匹配不上的默认回复，空字符串则不回复",
+        "rules:key可以是正则表达式"
+    ],
     "default":{
-        "tips":"默认回复，空字符串则不回复",
+        "tips":"匹配不上的默认回复，空字符串则不回复",
         "type":"text",
         "content":""
     },
     "rules":{
-        "你好123":{"type":"text","content":"你好啊"},
-        "美图123":{"type":"image","content":"https://wechaty.github.io/wechaty/images/bot-qr-code.png"}
+        "^测试$":{"type":"text","content":"完全匹配测试成功"},
+        "^测试":{"type":"text","content":"匹配开头"},
+        "测试$":{"type":"text","content":"匹配结尾"},
+        "你好123":{"type":"text","content":"你好啊6666"},
+        "美图123":{"type":"image","content":"https://i1.hdslb.com/bfs/archive/de002977c5c8852933816acff8386d747205b5d8.jpg"}
     }
 }
