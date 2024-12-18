@@ -87,6 +87,7 @@ function readConfig() {
   }
 }
 
+//回复消息
 function responseMsg(message) {
   const fromMsg = message.text()
   if (!fromMsg) {
