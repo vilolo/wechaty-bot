@@ -8,8 +8,8 @@
 
 第二步：git clone https://github.com/vilolo/wechaty-bot.git
 
-第三步：npm i
+第三步：进入wechaty-bot文件夹，命令行执行  `npm i`
 
-第四步：扫码登录
+第四步：启动服务 `node bot.js`
 
-第五步：配置回复内容
+第五步：扫码登录，配置回复内容
