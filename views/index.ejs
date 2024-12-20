@@ -1,38 +1,41 @@
 <html>
 
 <body>
-    <% if(loginStatus==0) { %>
-        <div>请扫码登录</div>
-        <div><img src="<%= qrCodeUrl %>" alt="二维码" /></div>
-    <% } else { %>
-        <div>
-            <%= userName %>已登录
-        </div>
-        <div><button onclick="logout()">退出登录</button></div>
-    <% } %>
+    <div style="align-content:center; padding:20px;">
+        <% if(loginStatus==0) { %>
+            <div>请扫码登录</div>
+            <div><img src="<%= qrCodeUrl %>" alt="二维码" /></div>
+            <% } else { %>
+                <div>
+                    <%= userName %>已登录
+                </div>
+                <div><button onclick="logout()">退出登录</button></div>
+                <% } %>
+    </div>
 </body>
 <script>
-function logout(){
-    console.log('退出登录')
-    fetch('http://localhost:3000/logout').then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        alert(data.msg)
-        if(data.code == 200){
-            window.location.reload();
-        }
-    })
-    .catch(error => {
-        console.error('GET 请求失败:', error);
-    });
-}
+    function logout() {
+        console.log('退出登录')
+        fetch('http://localhost:3000/logout').then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+            .then(data => {
+                alert(data.msg)
+                if (data.code == 200) {
+                    window.location.reload();
+                }
+            })
+            .catch(error => {
+                console.error('GET 请求失败:', error);
+            });
+    }
 
-setInterval(function(){
-    window.location.reload()
-},10000)
+    setInterval(function () {
+        window.location.reload()
+    }, 5000)
 </script>
+
 </html>

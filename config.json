@@ -1,7 +1,8 @@
 {
     "说明":[
-        "default:匹配不上的默认回复，空字符串则不回复",
-        "rules:key可以是正则表达式"
+        "default:匹配找不到的默认回复，空字符串则不回复",
+        "rules:key可以是正则表达式",
+		"使用 \n 换行"
     ],
     "default":{
         "tips":"匹配不上的默认回复，空字符串则不回复",
@@ -12,7 +13,8 @@
         "^测试$":{"type":"text","content":"完全匹配"},
         "^开头":{"type":"text","content":"匹配开头"},
         "结尾$":{"type":"text","content":"匹配结尾"},
-        "测试123":{"type":"text","content":"只要包含字符串"},
-        "^发送图片$":{"type":"image","content":"https://i1.hdslb.com/bfs/archive/de002977c5c8852933816acff8386d747205b5d8.jpg"}
+        "测试123":{"type":"text","content":"匹配包含"},
+        "^发送图片$":{"type":"image","content":"https://i1.hdslb.com/bfs/archive/de002977c5c8852933816acff8386d747205b5d8.jpg"},
+        "^换行$":{"type":"text","content":"1\n111\n11111\n111\n1"}
     }
 }
