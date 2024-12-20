@@ -4,9 +4,9 @@
 
 使用步骤：
 
-第一步：安装最新的Node（ https://nodejs.org/zh-cn/download/prebuilt-installer ）
+第一步：安装Node（ https://nodejs.org/zh-cn/download/prebuilt-installer ）
 
-第二步：git clone https://github.com/vilolo/wechaty-bot.git
+第二步：下载代码 git clone https://github.com/vilolo/wechaty-bot.git
 
 第三步：进入wechaty-bot文件夹，命令行执行  `npm i`
 
