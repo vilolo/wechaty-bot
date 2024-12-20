@@ -4,7 +4,7 @@
 
 使用步骤：
 
-第一步：安装最新的Node（https://nodejs.org/zh-cn/download/prebuilt-installer）
+第一步：安装最新的Node（ https://nodejs.org/zh-cn/download/prebuilt-installer ）
 
 第二步：git clone https://github.com/vilolo/wechaty-bot.git
 
