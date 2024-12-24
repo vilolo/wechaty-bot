@@ -1,16 +1,18 @@
 <html>
 
 <body>
-    <div style="align-content:center; padding:20px;">
-        <% if(loginStatus==0) { %>
-            <div>请扫码登录</div>
-            <div><img src="<%= qrCodeUrl %>" alt="二维码" /></div>
-            <% } else { %>
+    <div style="display: flex; justify-content: center;">
+        <div>
+            <% if(loginStatus==0) { %>
+                <div style="display: flex; justify-content: center;">请扫码登录</div>
+                <div><img src="<%= qrCodeUrl %>" alt="二维码" /></div>
+                <% } else { %>
                 <div>
                     <%= userName %>已登录
                 </div>
-                <div><button onclick="logout()">退出登录</button></div>
-                <% } %>
+                <div><button onclick="logout()">点击退出登录</button></div>
+            <% } %>
+        </div>
     </div>
 </body>
 <script>
