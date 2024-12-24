@@ -1,12 +1,14 @@
+<img src="https://img2.baidu.com/it/u=1611119726,529830996&fm=253&fmt=auto&app=120&f=JPEG?w=400&h=400" width="200" />
+
 说明：简单使用的微信机器人，基于wechaty的免费Node版本
 
 功能：浏览器打开二维码扫码登录，配置json文件修改回复内容（没有对接AI回复，可自行对接）
 
 使用步骤：
 
-第一步：安装最新的Node（ https://nodejs.org/zh-cn/download/prebuilt-installer ）
+第一步：安装Node（ https://nodejs.org/zh-cn/download/prebuilt-installer ）
 
-第二步：git clone https://github.com/vilolo/wechaty-bot.git
+第二步：下载代码 git clone https://github.com/vilolo/wechaty-bot.git
 
 第三步：进入wechaty-bot文件夹，命令行执行  `npm i`
 
